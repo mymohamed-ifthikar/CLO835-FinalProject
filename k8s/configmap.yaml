@@ -1,0 +1,10 @@
+# k8s/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fullstack-config
+  namespace: fullstack-app
+data:
+  MONGO_URI: "mongodb://mongodb-service:27017/fullstackdb"
+  NODE_ENV: "production"
+
